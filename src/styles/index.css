@@ -1,0 +1,17 @@
+@import url("formStyle.css");
+@import url("formsContainer.css");
+@import url("header.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media(max-width: 1000px){
+
+    
+}

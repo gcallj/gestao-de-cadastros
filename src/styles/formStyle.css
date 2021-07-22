@@ -1,0 +1,48 @@
+.formStyle{
+    width: 40vw;
+    height: 40vh;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    border:solid white 3px;
+    border-radius: 20px;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+    
+}
+.formStyle label{
+    color:white;
+    font-size: 20px;
+    font-weight: 800;
+}
+.formStyle input{
+    height: 20px;
+    width: 30vw;
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    font-weight: 800; 
+    border-radius: 15px;   
+}
+.formStyle div{
+    margin: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formStyle h1{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+}
+.formStyle button{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    background: lightgray;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    align-self: center;
+}
