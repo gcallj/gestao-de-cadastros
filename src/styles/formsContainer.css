@@ -6,3 +6,9 @@
     flex-direction: row;
     justify-content: space-around;
 }
+@media screen and (max-width: 850px){
+    .formsContainer{
+        display: flex;
+        justify-content: center;
+    }
+}

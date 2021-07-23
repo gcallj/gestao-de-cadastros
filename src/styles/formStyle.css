@@ -47,3 +47,19 @@
     align-self: center;
     cursor: pointer;
 }
+@media screen and (max-width: 850px){
+    .formStyle{
+        margin-right: 10px;
+        
+    }
+    .formStyle label{
+        font-size: 15px;
+    }
+    .formStyle input{
+        width: 90%;
+    }
+    .formStyle button{
+        width: 50%;
+        font-size: 100%;
+    }
+}
