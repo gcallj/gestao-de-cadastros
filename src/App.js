@@ -1,6 +1,8 @@
 import './styles/index.css';
 import poster from './images/bf_logo.jpg';
 import { useState } from 'react';
+let USR=[];
+let PRD=[];
 
 export default function App(props) {
   const [user, setUser]=useState('');
@@ -15,16 +17,23 @@ export default function App(props) {
   const [price, setPrice]=useState('');
   const [pictureUrl, setPictureUrl]=useState('');
 
-  const usr = {user, email, address, ID, pass};
-  const prd = {product,type,description,price,pictureUrl}
+  let usr = {user, email, address, ID, pass};
+  let prd = {product,type,description,price,pictureUrl}
 
+  
   function handleSubmitUser(e) {
     e.preventDefault();
-    console.log({usr});
+    USR.push(usr);
+    let convertDataUser = JSON.stringify(USR);
+    localStorage.setItem('users', convertDataUser);
+    console.log({USR});
   }
   function handleSubmitProduct(e) {
     e.preventDefault();
-    console.log({prd});
+    PRD.push(prd);
+    let convertDataProduct = JSON.stringify(PRD);
+    localStorage.setItem('products', convertDataProduct);
+    console.log({PRD});
   }
 
   return (
